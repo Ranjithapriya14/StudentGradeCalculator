@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+class StudentGradeCalculator{
+   public static void main(String[]args){
+      int s1,s2,s3,s4,s5,total marks;
+      String name;
+      float avg;
+      Scanner in=new Scanner(System.in);
+      System.out.print("Student Name : ");
+      name=in.nextLine();
+      System.out.print("Mark of the subject s1 is : ");
+      s1=in.nextInt();
+      System.out.print("Mark of the subject s2 is : ");
+      s2=in.nextInt();
+      System.out.print("Mark of the subject s3 is : ");
+      s3=in.nextInt();
+      System.out.print("Mark of the subject s4 is : ");
+      s4=in.nextInt();
+      System.out.print("Mark of the subject s5 is : ");
+      s5=in.nextInt();
+      total marks=(s1+s2+s3+s4+s5);
+      avg=(s1+s2+s3+s4+s5)/5;
+      if(avg>90 && avg<=100){
+         System.out.println("O Grade");
+      }
+      else if(avg>80 && avg<=90){
+         System.out.println("A+ Grade");
+      }
+      else if(avg>70 && avg<=80){
+         System.out.println("A Grade");
+      }
+      else if(avg>60 && avg<=70){
+         System.out.println("B+ Grade");
+      }
+      else if(avg>55 && avg<=60){
+         System.out.println("B Grade");
+      }
+      else if(avg>50 && avg<=55){
+         System.out.println("C Grade");
+      }
+      else{
+         System.out.println("U Grade");
+      }
+   }
+}
