@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 class StudentGradeCalculator{
    public static void main(String[]args){
-      int s1,s2,s3,s4,s5,total marks;
+      int s1,s2,s3,s4,s5,total_marks;
       String name;
       float avg;
       Scanner in=new Scanner(System.in);
@@ -18,7 +18,7 @@ class StudentGradeCalculator{
       s4=in.nextInt();
       System.out.print("Mark of the subject s5 is : ");
       s5=in.nextInt();
-      total marks=(s1+s2+s3+s4+s5);
+      total_marks=(s1+s2+s3+s4+s5);
       avg=(s1+s2+s3+s4+s5)/5;
       if(avg>90 && avg<=100){
          System.out.println("O Grade");
