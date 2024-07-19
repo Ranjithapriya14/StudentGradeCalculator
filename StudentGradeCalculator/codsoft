@@ -20,6 +20,7 @@ class StudentGradeCalculator{
       s5=in.nextInt();
       total_marks=(s1+s2+s3+s4+s5);
       avg=(s1+s2+s3+s4+s5)/5;
+      System.out.println("Average mark is "+avg);
       if(avg>90 && avg<=100){
          System.out.println("O Grade");
       }
